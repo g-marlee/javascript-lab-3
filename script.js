@@ -36,3 +36,10 @@ function addSubmission(array, newName, newScore, newDate) {
 function deleteSubmissionByIndex(array, index) {
     array.splice(index, 1);
 }
+
+function deleteSubmissionByName(array, name) {
+    let index = array.findIndex(submission => submissions.name === name);
+    array.splice(index, 1);
+}
+
+
