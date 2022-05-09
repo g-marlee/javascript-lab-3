@@ -85,3 +85,7 @@ function findAverageScore(array) {
 function filterPassing(array) {
     return array.filter(submissions => submissions.passed === true);
 }
+
+function filter90AndAbove(array) {
+    return array.filter(submissions => submissions.score >= 90);
+}
