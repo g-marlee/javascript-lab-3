@@ -81,3 +81,7 @@ function findAverageScore(array) {
     }
     return averageScore = totalScores/array.length;
 }
+
+function filterPassing(array) {
+    return array.filter(submissions => submissions.passed === true);
+}
