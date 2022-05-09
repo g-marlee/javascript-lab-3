@@ -89,3 +89,13 @@ function filterPassing(array) {
 function filter90AndAbove(array) {
     return array.filter(submissions => submissions.score >= 90);
 }
+
+// Extended challenges
+
+function createRange(start, end) {
+    const range = [];
+    for (let i = start; i <= end; i++) {
+        range.push(i);
+    }
+    return range;
+}
