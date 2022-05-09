@@ -66,10 +66,18 @@ function findSubmissionByName(array, name) {
 
 function findLowestScore(array) {
     let lowestScore = 100;
-    for (let index = 0; index < array.length; index++) {
-        if (array[index].score < lowestScore) {
-            lowestScore = array[index].score;
+    for (let item of array) {
+        if (item.score < lowestScore) {
+            lowestScore = item.score;
         }
     }
     return lowestScore;
+}
+
+function findAverageScore(array) {
+    let totalScores = 0;
+    for (let item of array) {
+        totalScores += item.score;
+    }
+    return averageScore = totalScores/array.length;
 }
