@@ -32,3 +32,7 @@ function addSubmission(array, newName, newScore, newDate) {
     let newObject = {name: newName, score: newScore, date: newDate, passed: passingScore};
     array.push(newObject);
 }
+
+function deleteSubmissionByIndex(array, index) {
+    array.splice(index, 1);
+}
