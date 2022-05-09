@@ -42,4 +42,15 @@ function deleteSubmissionByName(array, name) {
     array.splice(index, 1);
 }
 
+function editSubmission(array, index, score) {
+    let passingScore = true;
+    if (score >= 60) {
+        passingScore = true;
+    } else {
+        passingScore = false;
+    }
 
+    let newObject = {name: array[index].name, score: score, date: array[index].date, passed: passingScore};
+
+    array.splice(index, 1, newObject);
+}
