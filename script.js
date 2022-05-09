@@ -1,4 +1,4 @@
-let submissions = [
+const submissions = [
     {
         name: "Jane",
         score: 95,
@@ -62,4 +62,14 @@ function findSubmissionByName(array, name) {
     } else {
         return "Error";
     }
+}
+
+function findLowestScore(array) {
+    let lowestScore = 100;
+    for (let index = 0; index < array.length; index++) {
+        if (array[index].score < lowestScore) {
+            lowestScore = array[index].score;
+        }
+    }
+    return lowestScore;
 }
